@@ -7,14 +7,14 @@ import { getDatabase } from "firebase/database";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAczIZP1tvhrNIFCgkg0SU2nePW8UPhLQ0",
-  authDomain: "project-ofelos.firebaseapp.com",
-  databaseURL: "https://project-ofelos-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "project-ofelos",
-  storageBucket: "project-ofelos.appspot.com",
-  messagingSenderId: "488418278390",
-  appId: "1:488418278390:web:778cb8ca0b87a35a5ae5d7",
-  measurementId: "G-JPEKV15RVN"
+  apiKey: "AIzaSyCzfioHwSdeETzNj-1N1OOlRbIJBQVd40U",
+  authDomain: "ofelos-larvasida-ball.firebaseapp.com",
+  databaseURL: "https://ofelos-larvasida-ball-default-rtdb.firebaseio.com",
+  projectId: "ofelos-larvasida-ball",
+  storageBucket: "ofelos-larvasida-ball.appspot.com",
+  messagingSenderId: "563675286119",
+  appId: "1:563675286119:web:0f34150ed9140bb8a662c2"
+  // measurementId: "G-JPEKV15RVN"
 };
 
 // Initialize Firebase
