@@ -29,12 +29,11 @@ function LatarBelakangSection() {
 
           <div className="w-[683px]">
             <p className="text-3xl font-light text-[#4F4A43] text-justify">
-              Demam Berdarah Dengue (DBD) merupakan sebuah infeksi yang 
-              diakibatkan oleh arbovirus yang ditularkan melalui perantara 
-              gigitan nyamuk Aedes aegypti. Menurut data dari kemenkes, 
-              kasus DBD mengalami peningkatan dari 73.518 kasus pada 
-              tahun 2021 menjadi 125.888 kasus pada tahun 2022. 
-              Angka terbesar kasus DBD terjadi di perkotaan.
+              Demam Berdarah Dengue (DBD) merupakan sebuah infeksi yang
+              diakibatkan oleh arbovirus (arthro podborn virus) yang ditularkan
+              melalui perantara gigitan nyamuk Aedes aegypti. Iklim tropis di
+              Indonesia menjadi faktor pendukung persebaran nyamuk Aedes aegypti
+              yang merupakan vektor utama penyakit DBD.
             </p>
           </div>
         </div>

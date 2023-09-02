@@ -14,7 +14,6 @@ const firebaseConfig = {
   storageBucket: "ofelos-larvasida-ball.appspot.com",
   messagingSenderId: "563675286119",
   appId: "1:563675286119:web:0f34150ed9140bb8a662c2"
-  // measurementId: "G-JPEKV15RVN"
 };
 
 // Initialize Firebase
