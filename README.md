@@ -6,7 +6,7 @@
 ```javascript
 DB_USERNAME = 'admin-ofelos'
 DB_PASSWORD = 'oIMjh2Xfrttk8fQQ'
-MONGO_URI = 'mongodb+srv://admin-ofelos:oIMjh2Xfrttk8fQQ@cluster0.p96uklw.mongodb.net/ofelos-db'
+MONGO_URI = 'mongodb+srv://adindaaasals:4alDyL4r1GmCwx4b@cluster0.lgc3rgf.mongodb.net/ofelos-db'
 TOKEN_SECRET = 'ofelos-secret'
 DOMAIN = 'http://localhost:3000'
 
