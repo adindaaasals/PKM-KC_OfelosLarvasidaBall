@@ -15,6 +15,21 @@ import { firebase } from "@/firebase/firebase-config";
 function Controller() {
   const updateDir = useDirection();
   const [sensor, setSensor] = useState(null);
+  const [pump1, setPump1] = useState(false);
+  const [pump2, setPump2] = useState(false);
+
+  //set pump false when first load
+  const setPump = async () => {
+    const dbPath = "/pump";
+    const value = {
+      pump_1: false,
+      pump_2: false,
+    };
+    await updateDir.updateDirection(dbPath, value);
+  };
+  useEffect(() => {
+    setPump();
+  }, []);
 
   useEffect(() => {
     const dbRef = ref(firebase, "/pump/isFull");
@@ -24,6 +39,24 @@ function Controller() {
       setSensor(sensorData);
     });
   }, []);
+
+  const handlePump = async (pumpType) => {
+    const dbPath = "/pump";
+    let value = {};
+    if (pumpType === "pump_1") {
+      value = {
+        pump_1: !pump1,
+      };
+      setPump1(!pump1);
+    } else if (pumpType === "pump_2") {
+      value = {
+        pump_2: !pump2,
+      };
+      setPump2(!pump2);
+    }
+    console.log(value);
+    await updateDir.updateDirection(dbPath, value);
+  };
 
   const setOn = async (path, dir) => {
     const dbPath = "/direction";
@@ -47,8 +80,7 @@ function Controller() {
         {/* Circle controller with 4 arrow button */}
         <div
           className="w-fit h-fit bg-[#D9D9D9] rounded-[20px] px-4 py-2 drop-shadow-md hover:cursor-pointer text-xl"
-          onMouseDown={() => setOn("/pump", "pump_1")}
-          onMouseUp={() => setOff("/pump", "pump_1")}
+          onClick={() => handlePump("pump_1")}
         >
           <p>Pump 1</p>
         </div>
@@ -70,13 +102,7 @@ function Controller() {
             />
           </div>
           <div className="bg-rose">
-            <div
-              className="w-full h-full bg-white rounded-full m-auto flex items-center justify-center drop-shadow-lg hover:cursor-pointer"
-              onMouseDown={() => setOn("/direction", "stop")}
-              onMouseUp={() => setOff("/direction", "stop")}
-            >
-              {/* <p className="text-center h-fit my-auto text-3xl ">OK</p> */}
-            </div>
+            <div className="w-full h-full bg-white rounded-full m-auto flex items-center justify-center drop-shadow-lg"></div>
           </div>
           <div className="bg-rose">
             <BiSolidRightArrow
@@ -97,8 +123,7 @@ function Controller() {
         </div>
         <div
           className="w-fit h-fit bg-[#D9D9D9] rounded-[20px] px-4 py-2 drop-shadow-md hover:cursor-pointer text-xl"
-          onMouseDown={() => setOn("/pump", "pump_2")}
-          onMouseUp={() => setOff("/pump", "pump_2")}
+          onClick={() => handlePump("pump_2")}
         >
           <p>Pump 2</p>
         </div>

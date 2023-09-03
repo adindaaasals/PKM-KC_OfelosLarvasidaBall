@@ -1,23 +1,26 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
 function LatarBelakangSection() {
+  const handleLink = () => {
+    window.location.href = "/main";
+  };
   return (
     <>
       <div className="py-20 px-28" id="latar-belakang">
         <div className="flex justify-center mb-24">
-          <Link
-            href="/main"
-            className="p-4 rounded-2xl bg-[#D9D9D9] flex items-center"
+          <div
+            className="p-4 rounded-2xl bg-[#D9D9D9] flex items-center cursor-pointer hover:bg-[#BFBFBF]"
+            onClick={handleLink}
           >
             <Image src="/images/logo.svg" alt="logo" width={65} height={74} />
             <p className="text-black text-4xl font-normal italic">
               Get Started!
             </p>
-          </Link>
+          </div>
         </div>
         <div className="flex justify-center items-center gap-24">
           <div className="">
@@ -38,13 +41,13 @@ function LatarBelakangSection() {
           </div>
         </div>
         <div className="flex justify-center mt-8">
-            <Link
-              href="/latar-belakang"
-              className="text-center px-8 py-4 bg-[#315D9E] text-white hover:cursor-pointer rounded-2xl text-xl font-bold"
-            >
-              More details
-            </Link>
-          </div>
+          <Link
+            href="/latar-belakang"
+            className="text-center px-8 py-4 bg-[#315D9E] text-white hover:cursor-pointer rounded-2xl text-xl font-bold"
+          >
+            More details
+          </Link>
+        </div>
       </div>
     </>
   );

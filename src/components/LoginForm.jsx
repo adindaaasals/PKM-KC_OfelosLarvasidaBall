@@ -26,7 +26,7 @@ function LoginForm() {
       toast.dismiss(toastLoading);
       if (res.data.body.status === "success") {
         toast.success("Login Success");
-        router.push("/");
+        window.location.href = "/";
       } else {
         toast.error(res.data.body.message);
       }
