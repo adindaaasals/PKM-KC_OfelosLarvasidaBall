@@ -11,6 +11,7 @@ import useDirection from "@/hooks/useDirection";
 
 import { ref, child, onValue } from "firebase/database";
 import { firebase } from "@/firebase/firebase-config";
+import { toast } from "react-hot-toast";
 
 function Controller() {
   const updateDir = useDirection();
@@ -37,6 +38,19 @@ function Controller() {
     onValue(dbRef, (snapshot) => {
       const sensorData = snapshot.val();
       setSensor(sensorData);
+      if(sensorData >= 7){
+        toast("Water is Full!!", {
+          duration: Infinity,
+          id: "waterLevel",
+          icon: "⚠️",
+          style: {
+            background: "#D0342C",
+            color: "#fff",
+          },
+        });
+      }else{
+        toast.dismiss("waterLevel");
+      }
     });
   }, []);
 
