@@ -38,7 +38,7 @@ function Controller() {
     onValue(dbRef, (snapshot) => {
       const sensorData = snapshot.val();
       setSensor(sensorData);
-      if(sensorData >= 90){
+      if(sensorData >= 4){
         toast("Water is Full!!", {
           duration: Infinity,
           id: "waterLevel",
