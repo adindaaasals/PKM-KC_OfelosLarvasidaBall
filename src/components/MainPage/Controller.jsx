@@ -33,7 +33,7 @@ function Controller() {
   }, []);
 
   useEffect(() => {
-    const dbRef = ref(firebase, "/pump/isFull");
+    const dbRef = ref(firebase, "/water_level");
 
     onValue(dbRef, (snapshot) => {
       const sensorData = snapshot.val();
