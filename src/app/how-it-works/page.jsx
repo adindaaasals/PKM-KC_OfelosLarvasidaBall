@@ -54,7 +54,7 @@ function Page() {
                   src="/images/fitur-monitoring.png"
                   width={206}
                   height={199}
-                  alt="ESP-32"
+                  alt="fitur-monitoring"
                 />
               </div>
               <div>
@@ -77,7 +77,7 @@ function Page() {
                   src="/images/hasilfitur-monitoring.png"
                   width={206}
                   height={199}
-                  alt="ESP-32"
+                  alt="hasilfitur-monitoring"
                 />
               </div>
               <div>
@@ -100,7 +100,7 @@ function Page() {
                   src="/images/pompa.png"
                   width={206}
                   height={199}
-                  alt="ESP-32"
+                  alt="pompa"
                 />
               </div>
               <div>
@@ -123,7 +123,7 @@ function Page() {
                   src="/images/larva-mesh.png"
                   width={206}
                   height={199}
-                  alt="ESP-32"
+                  alt="larva-mesh"
                 />
               </div>
               <div>
@@ -143,10 +143,10 @@ function Page() {
               </div>
               <div>
                 <Image
-                  src="/images/servo.jpg"
+                  src="/images/servo.png"
                   width={206}
                   height={199}
-                  alt="ESP-32"
+                  alt="servo"
                 />
               </div>
               <div>
@@ -169,7 +169,7 @@ function Page() {
                   src="/images/waterLevel-sensor.png"
                   width={206}
                   height={199}
-                  alt="ESP-32"
+                  alt="waterLevel-sensor"
                 />
               </div>
               <div>
