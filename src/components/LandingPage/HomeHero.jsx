@@ -13,7 +13,7 @@ function HomeHero() {
             Satukan tekad, satukan tujuan!
           </h1>
           <h1 className="text-5xl font-bold text-[#4F4A43] text-center">
-            Marilah kita sama-sama kurangi entisitas dari DBD
+            Marilah kita sama-sama kurangi entisitas dari Demam Berdarah Dengue (DBD)
           </h1>
         </div>
       </div>
