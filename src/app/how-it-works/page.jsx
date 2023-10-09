@@ -35,32 +35,8 @@ function Page() {
               </div>
               <div>
                 <p className="text-justify text-3xl w-[700px]">
-                  Komponen utama yang digunakan dalam Larvasida Ball adalah ESP
-                  32, yang berfungsi sebagai navigasi dan IoT.
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center items-center w-full gap-5 mb-11">
-              <div>
-                <h1
-                  className="text-6xl text-[#77C4FD] italic"
-                  style={{ fontFamily: "Inter" }}
-                >
-                  1
-                </h1>
-              </div>
-              <div>
-                <Image
-                  src="/images/ESP-32.png"
-                  width={206}
-                  height={199}
-                  alt="ESP-32"
-                />
-              </div>
-              <div>
-                <p className="text-justify text-3xl w-[700px]">
-                  Komponen utama yang digunakan dalam Larvasida Ball adalah ESP
-                  32, yang berfungsi sebagai navigasi dan IoT.
+                Komponen utama yang digunakan dalam Larvasida Ball adalah ESP 32, 
+                yang berfungsi sebagai navigasi dan IoT.
                 </p>
               </div>
             </div>
@@ -75,7 +51,7 @@ function Page() {
               </div>
               <div>
                 <Image
-                  src="/images/ESP-32.png"
+                  src="/images/fitur-monitoring.png"
                   width={206}
                   height={199}
                   alt="ESP-32"
@@ -83,10 +59,7 @@ function Page() {
               </div>
               <div>
                 <p className="text-justify text-3xl w-[700px]">
-                  Kamera ESP 32 dan LED lamp hadir dalam Larvasida Ball untuk
-                  memfasilitasi analisis real-time keadaan di sekitar perangkat.
-                  Pengguna dapat mengakses tampilan ini dengan tap pada bagian
-                  “Get Started”
+                Kamera ESP 32 hadir dalam Larvasida Ball untuk memfasilitasi analisis real-time keadaan di sekitar perangkat. Pengguna dapat mengakses tampilan ini dengan tap pada bagian “Get Started”. 
                 </p>
               </div>
             </div>
@@ -101,7 +74,7 @@ function Page() {
               </div>
               <div>
                 <Image
-                  src="/images/ESP-32.png"
+                  src="/images/hasilfitur-monitoring.png"
                   width={206}
                   height={199}
                   alt="ESP-32"
@@ -124,7 +97,7 @@ function Page() {
               </div>
               <div>
                 <Image
-                  src="/images/ESP-32.png"
+                  src="/images/pompa.png"
                   width={206}
                   height={199}
                   alt="ESP-32"
@@ -132,7 +105,7 @@ function Page() {
               </div>
               <div>
                 <p className="text-justify text-3xl w-[700px]">
-                Setelah mendeteksi keberadaan larva, Pompa air DC 5v diaktifkan melalui tombol ON yang ada di website. Pompa ini berfungsi untuk menghisap larva dari dalam genangan air.
+                Setelah mendeteksi keberadaan larva, pompa air DC 5v diaktifkan melalui tombol ON yang ada di website. Pompa ini berfungsi untuk menghisap larva dari dalam genangan air.
                 </p>
               </div>
             </div>
@@ -147,7 +120,7 @@ function Page() {
               </div>
               <div>
                 <Image
-                  src="/images/ESP-32.png"
+                  src="/images/larva-mesh.png"
                   width={206}
                   height={199}
                   alt="ESP-32"
@@ -155,7 +128,7 @@ function Page() {
               </div>
               <div>
                 <p className="text-justify text-3xl w-[700px]">
-                Larva yang dihisap oleh pompa akan masuk ke bagian bawah bola robot.
+                Larva yang dihisap oleh pompa akan masuk ke bagian bawah badan robot.
                 </p>
               </div>
             </div>
@@ -170,7 +143,7 @@ function Page() {
               </div>
               <div>
                 <Image
-                  src="/images/ESP-32.png"
+                  src="/images/servo.jpg"
                   width={206}
                   height={199}
                   alt="ESP-32"
@@ -178,11 +151,34 @@ function Page() {
               </div>
               <div>
                 <p className="text-justify text-3xl w-[700px]">
-                Genangan air yang berisi larva akan dibasmi dengan larutan senyawa dari daun kemangi dan daun ciplukan. Larutan ini terbukti efektif dalam membunuh larva Aedes aegypti.
+                Ofelos akan meluruhkan granula ekstrak daun kemangi dan daun ciplukan melalui automatic servo. Larutan ini terbukti efektif dalam menstimulasi mortal larva Aedes aegypti.
                 </p>
               </div>
             </div>
             <div className="flex justify-center items-center w-full gap-5 mb-11">
+              <div>
+                <h1
+                  className="text-6xl text-[#77C4FD] italic"
+                  style={{ fontFamily: "Inter" }}
+                >
+                  7
+                </h1>
+              </div>
+              <div>
+                <Image
+                  src="/images/waterLevel-sensor.png"
+                  width={206}
+                  height={199}
+                  alt="ESP-32"
+                />
+              </div>
+              <div>
+                <p className="text-justify text-3xl w-[700px]">
+                Ketika bagian bawah bola robot telah penuh dengan larva, sensor air akan mentransmisikan alert signal sebagai indikasi bahwa robot telah mencapai kapasitas maksimal.
+                </p>
+              </div>
+            </div>
+            {/* <div className="flex justify-center items-center w-full gap-5 mb-11">
               <div>
                 <h1
                   className="text-6xl text-[#77C4FD] italic"
@@ -204,7 +200,7 @@ function Page() {
                 Ketika bagian bawah bola robot telah penuh dengan larva, sensor air akan mengenali tingkat keberadaan larva dan mengirimkan sinyal sebagai indikasi bahwa robot telah mencapai kapasitas maksimal.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
