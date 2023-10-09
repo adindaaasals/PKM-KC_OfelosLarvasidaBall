@@ -21,7 +21,7 @@ function Footer() {
                 <FaFacebook />
               </Link>
               <Link
-                href="/"
+                href="instagram.com/ofeloslarvasida.ball"
                 className="p-2 rounded-full bg-[#D9D9D9] flex items-center text-slate-800 text-xl"
               >
                 <FaInstagram />
