@@ -30,8 +30,8 @@ function HowItWorksSection() {
             </div>
             <div>
               <p className="text-justify text-3xl w-[700px]">
-                Komponen utama yang digunakan dalam Larvasida Ball adalah ESP
-                32, yang berfungsi sebagai navigasi dan IoT.
+                Komponen utama yang digunakan dalam Larvasida Ball adalah ESP 32, 
+                yang berfungsi sebagai navigasi dan IoT.
               </p>
             </div>
           </div>
@@ -46,18 +46,15 @@ function HowItWorksSection() {
             </div>
             <div>
               <Image
-                src="/images/ESP-32.png"
+                src="/images/fitur-monitoring.png"
                 width={206}
                 height={199}
-                alt="ESP-32"
+                alt="fitur-monitoring"
               />
             </div>
             <div>
               <p className="text-justify text-3xl w-[700px]">
-                Kamera ESP 32 dan LED lamp hadir dalam Larvasida Ball untuk
-                memfasilitasi analisis real-time keadaan di sekitar perangkat.
-                Pengguna dapat mengakses tampilan ini dengan tap pada bagian
-                “Get Started”
+              Kamera ESP 32 hadir dalam Larvasida Ball untuk memfasilitasi analisis real-time keadaan di sekitar perangkat. Pengguna dapat mengakses tampilan ini dengan tap pada bagian “Get Started”. 
               </p>
             </div>
           </div>
@@ -72,16 +69,15 @@ function HowItWorksSection() {
             </div>
             <div>
               <Image
-                src="/images/ESP-32.png"
+                src="/images/hasilfitur-monitoring.png"
                 width={206}
                 height={199}
-                alt="ESP-32"
+                alt="hasilfitur-monitoring"
               />
             </div>
             <div>
               <p className="text-justify text-3xl w-[700px]">
-                Kamera ESP 32 juga berfungsi sebagai alat pendeteksi larva di
-                permukaan air.
+              Kamera ESP 32 juga berfungsi sebagai alat pendeteksi larva di permukaan air.
               </p>
             </div>
           </div>
