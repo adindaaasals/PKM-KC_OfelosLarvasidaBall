@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -30,7 +30,7 @@ function Footer() {
                 href="/"
                 className="p-2 rounded-full bg-[#D9D9D9] flex items-center text-slate-800 text-xl"
               >
-                <FaTwitter />
+                <FaYoutube />
               </Link>
               <Link
                 href="/"
