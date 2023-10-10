@@ -5,7 +5,7 @@ function CameraContainer() {
     <>
       <div className='flex justify-center'>
         <div className='w-[586px] h-[400px] bg-slate-800 rounded-3xl m-16'>
-          {/* Content */}
+          <iframe src="http://172.20.10.4/"></iframe>
         </div>
       </div>
     </>
